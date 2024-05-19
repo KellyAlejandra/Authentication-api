@@ -19,7 +19,6 @@ import { AuthController } from './auth.controller';
       imports:[ConfigModule],
       inject:[ConfigService],
       useFactory: (configService:ConfigService)=> {
-        console.log('jwt-secret',configService.get('JWT_SECRET') )
         return {
           secret:configService.get('JWT_SECRET'),
           signOptions:{
