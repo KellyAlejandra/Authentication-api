@@ -18,3 +18,9 @@ docker-compose up -d
 ```
 pnpm run start:dev
 ```
+4. end points
+```
+http://localhost:3000/auth/login
+http://localhost:3000/auth/register
+
+```
